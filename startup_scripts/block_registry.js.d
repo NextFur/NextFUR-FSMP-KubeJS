@@ -1,0 +1,15 @@
+StartupEvents.registry("block", e => {
+
+    e.create("treated_casing")
+        .displayName("Treated Casing")
+        .soundType("lantern")
+        .hardness(2.0)
+        .resistance(3.0)
+        .requiresTool(true)
+        .fullBlock(true)
+        .opaque(true)
+        .tagBlock("create:casing")
+        .tagBlock("minecraft:mineable/axe")
+        .tagBlock("minecraft:mineable/pickaxe")
+        .texture("stuff:block/treated_casing")
+})

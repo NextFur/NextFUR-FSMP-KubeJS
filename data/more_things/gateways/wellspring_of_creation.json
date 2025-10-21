@@ -1,0 +1,299 @@
+{
+    "type": "gateways:endless",
+    "size": "medium",
+    "color": "#2B6CEE",
+    "base_wave": {
+        "max_wave_time": 800,
+        "setup_time": 100,
+        "entities": [
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:squid",
+                "count": 4
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:slime",
+                "nbt": {
+                        "Size": 4
+                    },
+                "count": 2
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:magma_cube",
+                "nbt": {
+                        "Size": 4
+                    },
+                "count": 2
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:iron_golem",
+                "count": 1
+            }
+        ],
+        "modifiers": [
+            {
+                "type": "gateways:attribute",
+                "attribute": "minecraft:generic.max_health",
+                "operation": "add_value",
+                "value": 6
+            },
+            {
+                "type": "gateways:attribute",
+                "attribute": "minecraft:generic.armor",
+                "operation": "add_value",
+                "value": 3
+            },
+            {
+                "type": "gateways:attribute",
+                "attribute": "irons_spellbooks:spell_resist",
+                "operation": "add_multiplied_total",
+                "value": 0.7
+            }
+        ],
+        "rewards": [
+            {
+                "type": "gateways:loot_table",
+                "loot_table": "foxes:gateways/mob_loot_general",
+                "desc": "Whatever mobs might give?",
+                "rolls": 6
+            },
+            {
+                "type": "gateways:command",
+                "command": "loot give @e[type=minecraft:player,distance=..32] loot foxes:gateways/mob_loot_personal",
+                "desc": "Whatever mobs might give? -> Inventory"
+            },
+            {
+                "type": "gateways:command",
+                "command": "/effect give @e[type=minecraft:player,distance=..32] minecraft:regeneration 8 2",
+                "desc": "A burst of regeneration"
+            }
+        ]
+    },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 2,
+                "max": 20
+            },
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:phantom",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:polar_bear",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:sheep",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:skeleton",
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 1,
+                "max": 25
+            },
+            "entities": [],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/mob_loot_general",
+                    "desc": "An assortment of mob loot",
+                    "rolls": 1
+                },
+                {
+                    "type": "gateways:summon",
+                    "entity": {
+                        "type": "gateways:standard",
+                        "entity": "minecraft:cow",
+                        "count": 1
+                    }
+                },
+                {
+                    "type": "gateways:summon",
+                    "entity": {
+                        "type": "gateways:standard",
+                        "entity": "minecraft:squid",
+                        "count": 1
+                    }
+                },
+                {
+                    "type": "gateways:summon",
+                    "entity": {
+                        "type": "gateways:standard",
+                        "entity": "minecraft:enderman",
+                        "count": 1
+                    }
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.18
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:dodge_chance",
+                    "operation": "add_value",
+                    "value": 0.015
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 0.8
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 0.8
+                }
+            ],
+            "max_wave_time": -20,
+            "setup_time": -4
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 5
+            },
+            "entities": [
+                {
+                    "type": "gateways:summon",
+                    "entity": "minecraft:iron_golem",
+                    "desc": "Plagued Golem",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Plagued Golem'}"
+                    },
+                    "count": 1
+                },
+                {
+                    "type": "gateways:summon",
+                    "entity": "minecraft:piglin_brute",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:summon",
+                    "entity": "minecraft:silverfish",
+                    "count": 3
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:command",
+                    "command": "loot give @e[type=minecraft:player,distance=..32] loot foxes:gateways/mob_loot_personal",
+                    "desc": "Whatever mobs might give? -> Inventory"
+                }          
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 4
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_uncommon",
+                    "rolls": 2,
+                    "desc": "An uncommon enchanted book?"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 10
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:wither_skeleton",
+                    "count": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_rare",
+                    "rolls": 2,
+                    "desc": "A rare enchanted book?"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 18
+            },
+            "entities": [
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_legendary",
+                    "rolls": 1,
+                    "desc": "A single legendary enchanted book?"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:only_on_wave",
+                "wave": 13
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:fox",
+                    "desc": "It's a surprise?",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_legendary",
+                    "rolls": 4,
+                    "desc": "FOUR LEGENDARY BOOKS?"
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "type": "gateways:endless",
+    "size": "small",
+    "color": "#009944",
+    "base_wave": {
+        "max_wave_time": 400,
+        "setup_time": 60,
+        "entities": [
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:cow",
+                "count": 4
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:sheep",
+                "count": 4
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:skeleton",
+                "count": 1
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:husk",
+                "count": 3
+            }
+        ],
+        "modifiers": [
+            {
+                "type": "gateways:attribute",
+                "attribute": "minecraft:generic.armor",
+                "operation": "add_value",
+                "value": 4
+            }
+        ],
+        "rewards": [
+            {
+                "type": "gateways:loot_table",
+                "loot_table": "foxes:gateways/bonanza_of_the_wilds",
+                "rolls": 1,
+                "desc": "Gift of the Wilds"
+            }
+        ]
+    },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 1,
+                "max": 20
+            },
+            "entities": [
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:cow",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:sheep",
+                    "count": 1
+                },
+                {
+                    "type": "gateways:standard",
+                    "entity": "minecraft:skeleton",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/bonanza_of_the_wilds",
+                    "rolls": 1,
+                    "desc": "Gift of the Wilds"
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "lootjs:basic_lootchest",
+                    "rolls": 1,
+                    "desc": "Basic Supplies"
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_uncommon",
+                    "rolls": 1,
+                    "desc": "An uncommon enchanted book"
+                }
+            ],
+            "max_wave_time": -20
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 3
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:spider",
+                    "desc": "Nesting Spider",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Nesting Spider'}"
+                    },
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "lootjs:medium_lootchest",
+                    "rolls": 2,
+                    "desc": "Slightly Better Supplies!"
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_uncommon",
+                    "rolls": 3,
+                    "desc": "Uncommon enchanted books!"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 6
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:spider",
+                    "desc": "Nesting Spider",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Nesting Spider'}"
+                    },
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "lootjs:medium_lootchest",
+                    "rolls": 2,
+                    "desc": "Slightly Better Supplies!"
+                },
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_rare",
+                    "rolls": 3,
+                    "desc": "Rare enchanted books!"
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    }
+}

@@ -1,0 +1,320 @@
+{
+	"size": "large",
+	"color": "#11FFEE",
+	"waves": [
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 4
+		    	},
+                {
+                    "entity": "immersiveengineering:fusilier",
+                    "count": 4
+		    	},
+                {
+                    "entity": "minecraft:spider",
+                    "desc": "Nesting Spider",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Nesting Spider'}"
+                    },
+                    "count": 3
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.8
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                },
+                {
+                    "attribute": "apothic_attributes:armor_shred",
+                    "operation": "add_value",
+                    "value": 0.2
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 3
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 8
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/raiding_the_crystal_vault_wave",
+                    "rolls": 6,
+                    "desc": "Crystal Vault Guardians' Pockets"
+                }
+            ],
+			"max_wave_time": 600,
+			"setup_time": 100
+		},
+        
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 6
+		    	},
+                {
+                    "entity": "immersiveengineering:fusilier",
+                    "count": 4
+		    	},
+                {
+                    "entity": "minecraft:spider",
+                    "desc": "Nesting Spider",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Nesting Spider'}"
+                    },
+                    "count": 4
+                },
+                {
+                    "entity": "minecraft:evoker",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.0
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.125
+                },
+                {
+                    "attribute": "apothic_attributes:armor_shred",
+                    "operation": "add_value",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 4
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 10
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/raiding_the_crystal_vault_wave",
+                    "rolls": 10,
+                    "desc": "Crystal Vault Guardians' Pockets"
+                }
+            ],
+			"max_wave_time": 600,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 8
+		    	},
+                {
+                    "entity": "immersiveengineering:fusilier",
+                    "count": 8
+		    	},
+                {
+                    "entity": "immersiveengineering:commando",
+                    "count": 4
+                },
+                {
+                    "entity": "minecraft:spider",
+                    "desc": "Nesting Spider",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Nesting Spider'}"
+                    },
+                    "count": 6
+                },
+                {
+                    "entity": "minecraft:zoglin",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.5
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "apothic_attributes:armor_shred",
+                    "operation": "add_value",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 5
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 10
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/raiding_the_crystal_vault_wave",
+                    "rolls": 16,
+                    "desc": "Crystal Vault Guardians' Pockets"
+                }
+            ],
+			"max_wave_time": 600,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 6
+		    	},
+                {
+                    "entity": "minecraft:pillager",
+                    "count": 6
+                },
+                {
+                    "entity": "immersiveengineering:fusilier",
+                    "count": 10
+		    	},
+                {
+                    "entity": "immersiveengineering:commando",
+                    "count": 6
+                },
+                {
+                    "entity": "minecraft:spider",
+                    "desc": "Nesting Spider",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Nesting Spider'}"
+                    },
+                    "count": 8
+                },
+                {
+                    "entity": "minecraft:zoglin",
+                    "count": 2
+                },
+                {
+                    "entity": "minecraft:iron_golem",
+                    "count": 1
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.8
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "apothic_attributes:armor_shred",
+                    "operation": "add_value",
+                    "value": 0.3
+                },
+                {
+                    "attribute": "minecraft:generic.attack_damage",
+                    "operation": "add_value",
+                    "value": 5
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 12
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/raiding_the_crystal_vault_wave",
+                    "rolls": 5,
+                    "desc": "Crystal Vault Guardians' Pockets"
+                }
+            ],
+			"max_wave_time": 900,
+			"setup_time": 100
+		}
+	],
+    
+    "rewards": [
+        {
+            "type": "gateways:entity_loot",
+            "entity": "artifacts:mimic",
+            "rolls": 4
+        },
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "foxes:gateways/raiding_the_crystal_vault_end",
+            "rolls": 25,
+            "desc": "Seize the Crystal Vault"
+        },
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "foxes:multiblock/generate_geodes_basic",
+            "rolls": 15,
+            "desc": "Loot their minerals"
+        },
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "foxes:misc/enchanted_books_legendary",
+            "rolls": 10,
+            "desc": "And legendary enchantment books?"
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    },
+    "failures": [
+    ]
+}

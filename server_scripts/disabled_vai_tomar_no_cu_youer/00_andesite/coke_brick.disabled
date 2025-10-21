@@ -1,0 +1,26 @@
+ServerEvents.recipes(e => {
+    
+    // Remove Alloy Kiln's recipes
+    e.remove({ output: "immersiveengineering:cokebrick" })
+
+    // Add a mixing recipe for them
+
+    e.custom({
+        "type": "create:mixing",
+        "ingredients": [
+            { "type": "neoforge:block_tag", "tag": "c:sandstone/blocks" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:clay_ball" },
+            { "item": "minecraft:brick" },
+            { "item": "minecraft:brick" },
+            { "item": "kubejs:brick_dust" },
+            { "item": "kubejs:brick_dust" }
+        ],
+        "results": [
+            { "count": 3, "id": "immersiveengineering:cokebrick" }
+        ]
+    })
+
+})

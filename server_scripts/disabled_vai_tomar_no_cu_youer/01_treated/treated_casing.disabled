@@ -1,0 +1,16 @@
+ServerEvents.recipes(e => {
+
+    e.shaped(
+        Item.of("kubejs:treated_casing", 1),
+        [
+            "PPP",
+            "PCP",
+            "PPP"
+        ],
+        {
+            P: "#immersiveengineering:treated_wood",
+            C: "create:andesite_casing"
+        }
+    )
+
+})

@@ -1,0 +1,213 @@
+{
+    "type": "gateways:endless",
+    "size": "medium",
+    "color": "#885588",
+    "base_wave": {
+        "max_wave_time": 600,
+        "setup_time": 100,
+        "entities": [
+            {
+                "type": "gateways:standard",
+                "entity": "immersiveengineering:fusilier",
+                "count": 1
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:skeleton",
+                "count": 3
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:stray",
+                "count": 3
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:wither_skeleton",
+                "count": 2
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:zoglin",
+                "count": 2
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:witch",
+                "count": 5
+            }
+        ],
+        "modifiers": [
+            {
+                "type": "gateways:attribute",
+                "attribute": "minecraft:generic.max_health",
+                "operation": "add_value",
+                "value": 5
+            },
+            {
+                "type": "gateways:attribute",
+                "attribute": "minecraft:generic.armor",
+                "operation": "add_value",
+                "value": 2
+            },
+            {
+                "type": "gateways:attribute",
+                "attribute": "irons_spellbooks:spell_resist",
+                "operation": "add_multiplied_total",
+                "value": 0.8
+            }
+        ],
+        "rewards": [
+            {
+                "type": "gateways:loot_table",
+                "loot_table": "foxes:multiblock/generate_geodes_basic",
+                "desc": "An assortment of geodes",
+                "rolls": 3
+            },
+            {
+                "type": "gateways:command",
+                "command": "loot give @e[type=minecraft:player,distance=..32] loot foxes:gateways/a_lesson_in_mineralogy",
+                "desc": "An extra random bundle of ores! -> Inventory"
+            }
+        ]
+    },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 1,
+                "max": 20
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 1
+                }
+            ],
+            "rewards": [
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:crit_chance",
+                    "operation": "add_value",
+                    "value": 0.02
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 1
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:armor_pierce",
+                    "operation": "add_value",
+                    "value": 1
+                }
+            ],
+            "max_wave_time": -20,
+            "setup_time": -5
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 3
+            },
+            "entities": [
+                {
+                    "entity": "immersiveengineering:commando",
+                    "desc": "Golem Keeper",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Golem Keeper'}"
+                    },
+                    "count": 1
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/a_lesson_in_mineralogy",
+                    "rolls": 1,
+                    "desc": "More minerals??"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 7
+            },
+            "entities": [
+                {
+                    "entity": "immersiveengineering:commando",
+                    "desc": "Golem Keeper",
+                    "nbt": {
+                        "CustomNameVisible": 1,
+                        "CustomName": "{'text': 'Golem Keeper'}"
+                    },
+                    "count": 1
+                }
+            ],
+            "rewards": []
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_wave",
+                "wave": 12
+            },
+            "entities": [
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_epic",
+                    "rolls": 1,
+                    "desc": "An epic enchanted book?"
+                }    
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 3,
+                "max": 5
+            },
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_uncommon",
+                    "rolls": 1,
+                    "desc": "An uncommon enchanted book?"
+                }
+            ]
+        },
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 5,
+                "max": 3
+            },
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:misc/enchanted_books_rare",
+                    "rolls": 1,
+                    "desc": "A rare enchanted book?"
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    }
+}

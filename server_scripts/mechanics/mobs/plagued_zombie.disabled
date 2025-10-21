@@ -1,0 +1,28 @@
+EntityEvents.hurt("player", e => {
+    let player = e.entity
+    let monster = e.source.actual
+
+    
+    
+    Utils.server.runCommandSilent(`tellraw @a ${monster.type}`)
+
+    /*
+    console.log(entity.customName.string)
+    console.log(entity.customName.string == "Nesting Spider")
+    */
+
+    if (!e.source || !e.source.actual) return
+    if (!monster.type.includes("zombie")) return
+    if (!(monster.displayName.string == "Plagued Zombie")) return
+
+
+    // random number between 1 and 5
+    let amount = Math.floor(Math.random() * 4) + 1
+    for (let i = 0; i < amount; i++) {
+        let silverfish = e.level.createEntity("minecraft:iron_golem")
+        silverfish.x = entity.x
+        silverfish.y = entity.y
+        silverfish.z = entity.z
+        silverfish.spawn()
+    }
+})

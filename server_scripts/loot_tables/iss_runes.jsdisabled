@@ -1,0 +1,19 @@
+LootJS.lootTables(e => {
+
+    // Pyromancer: Fire Rune
+
+    /*
+    e.getLootTable("irons_spellbooks:entities/pyromancer").firstPool().removeItem("irons_spellbooks:fire_rune")
+    e.getLootTable("irons_spellbooks:entities/pyromancer").firstPool().removeItem("irons_spellbooks:scroll")
+    */
+
+    // Cryomancer: Ice Rune
+
+    // Apothecary: Nature Rune
+
+    // Priest: Holy Rune
+
+    // Necromancer: Rune
+
+
+})
