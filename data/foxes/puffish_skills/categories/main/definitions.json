@@ -1476,8 +1476,8 @@
 	},
 	"orion_notable_hand": {
 		"title": "Straight from the 133 Labs",
-		"description": "You have +0.75m to Entity Interaction Range\nYou have 20% less Spell Power\nYou have 20% less Attack Damage",
-		"extra_description": "Is this even worth it??",
+		"description": "You have +0.75m to Entity Interaction Range\nYou have 13.3% less Spell Power\nYou have 13.3% less Attack Damage",
+		"extra_description": "Briza Portas moment.",
 		"size": 1,
 		"icon": {
 			"type": "item",
@@ -1507,7 +1507,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:spell_power",
-					"value": -0.2,
+					"value": -0.133,
 					"operation": "multiply_total"
 				}
 			},
@@ -1515,7 +1515,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_damage",
-					"value": -0.2,
+					"value": -0.133,
 					"operation": "multiply_total"
 				}
 			}
@@ -1809,7 +1809,7 @@
 	},
 	"microscopium_notable_right": {
 		"title": "Please Check Malum's Guidebook on Removing a Geas Pact, tyvm!",
-		"description": "You have +1 to Maximum Geas,\nbut You have 20% less Maximum Health",
+		"description": "You have +1 to Maximum Geas\nYou have 20% less Maximum Health",
 		"extra_description": "Another Rafaelwolf's Geas incident, anyone?",
 		"size": 1,
 		"icon": {
@@ -2038,7 +2038,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "player.sneaking_speed",
-					"value": 0.2,
+					"value": 0.25,
 					"operation": "addition"
 				}
 			},
@@ -2046,7 +2046,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "neoforge:swim_speed",
-					"value": 0.3,
+					"value": 0.5,
 					"operation": "multiply_total"
 				}
 			},
@@ -2098,7 +2098,7 @@
 	},
 	"horologium_notable_mid": {
 		"title": "Just in Time!",
-		"description": "Your Spells' Cooldown Recharge 50% faster\nYour Rolls Recharge 20% faster\nYou have 20% reduced Spell Power",
+		"description": "Your Spells' Cooldown Recharge 60% faster\nYour Rolls Recharge 40% faster\nYou have 20% reduced Spell Power",
 		"extra_description": "Did you know 'more' is multiplicative with other modifiers and 'increased' is additive? The same for 'less' and 'reduced.' Thanks, Path of Exile.",
 		"size": 1,
 		"icon": {
@@ -2121,7 +2121,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:cooldown_reduction",
-					"value": 0.5,
+					"value": 0.6,
 					"operation": "multiply_base"
 				}
 			},
@@ -2129,7 +2129,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "combat_roll:recharge",
-					"value": 0.2,
+					"value": 0.4,
 					"operation": "multiply_base"
 				}
 			},
@@ -2149,7 +2149,7 @@
 	},
 	"horologium_notable_end": {
 		"title": "An Instrument for Telling the Hour",
-		"description": "Your Spells Cast 25% faster\nYou have Permanent Hastened 1 and Weakness 1",
+		"description": "Your Spells Cast 35% faster\nYou have Permanent Hastened 1 and Weakness 1",
 		"extra_description": "That's literally what Horologium means.",
 		"size": 1,
 		"icon": {
@@ -2172,7 +2172,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "irons_spellbooks:cast_time_reduction",
-					"value": 0.25,
+					"value": 0.35,
 					"operation": "multiply_base"
 				}
 			},
@@ -2918,8 +2918,8 @@
 	},
 	"leo_notable": {
 		"title": "Ambush and Assassinate",
-		"description": "Your Attacks deal an Additional 8% of the Target's Current HP as Additional Physical Damage\nYou have 10% more Attack Damage\nYou have 10% more Attack Speed\nYour Rolls Recharge 50% faster\nYou have 30% less Armor and Armor Toughness",
-		"extra_description": "It's the only place you'll ever get the first stat from. At least until I change my mind!",
+		"description": "You have 15% more Attack Damage\nYou have 15% more Attack Speed\nYour Rolls Recharge 60% faster\nYou have 30% less Armor and Armor Toughness",
+		"extra_description": "Some things had to go for balancing issues.",
 		"size": 1,
 		"icon": {
 			"type": "item",
@@ -2940,16 +2940,8 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "apothic_attributes:current_hp_damage",
-					"value": 0.08,
-					"operation": "addition"
-				}
-			},
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
 					"attribute": "generic.attack_damage",
-					"value": 0.1,
+					"value": 0.15,
 					"operation": "multiply_total"
 				}
 			},
@@ -2957,7 +2949,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "generic.attack_speed",
-					"value": 0.1,
+					"value": 0.15,
 					"operation": "multiply_total"
 				}
 			},
@@ -2965,7 +2957,7 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "combat_roll:recharge",
-					"value": 0.5,
+					"value": 0.6,
 					"operation": "multiply_base"
 				}
 			},
