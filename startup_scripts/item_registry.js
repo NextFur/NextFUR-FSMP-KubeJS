@@ -17,5 +17,7 @@ StartupEvents.registry("item", e => {
     e.create("stellar_ring").texture("stuff:item/fops/stellar_ring").displayName("§bStellar Ring")
     e.create("threaded_ring").texture("stuff:item/fops/threaded_ring").displayName("§bThreaded Ring")
     e.create("overgrown_ring").texture("stuff:item/fops/overgrown_ring").displayName("§bOvergrown Ring")
-
+    e.create("novice_essence").displayName("§cNovice Essence").texture("stuff:item/essences/essence1")
+    e.create("apprentice_essence").displayName("§6Apprentice Essence").texture("stuff:item/essences/essence2")
+    e.create("master_essence").displayName("§5Master Essence").texture("stuff:item/essences/essence3").glowing()
 })
