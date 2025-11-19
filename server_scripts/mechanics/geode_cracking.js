@@ -13,6 +13,6 @@ ItemEvents.rightClicked(e => {
             e.server.runCommandSilent(`loot give ${player.username} loot foxes:geodes/${geode_name}`)
             e.server.runCommandSilent(`playsound minecraft:block.amethyst_block.break player ${player.username} ${player.x} ${player.y} ${player.z}`)
         })
-        console.log(`${player.username} cracked an ${geode_name} geode`)
+        // console.log(`${player.username} cracked an ${geode_name} geode`)
     }
 })
