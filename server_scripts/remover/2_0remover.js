@@ -24,4 +24,5 @@ ServerEvents.recipes(e => {
          "exdeorum:diamond_mesh",
          "exdeorum:netherite_mesh"
     ]})
+    e.remove({ type: "actuallyadditions:empowering" })
 })
