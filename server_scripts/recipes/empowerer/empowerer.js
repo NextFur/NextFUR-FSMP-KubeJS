@@ -1,0 +1,78 @@
+ServerEvents.recipes(e => {
+    e.recipes.actuallyadditions.empowering(
+        "actuallyadditions:empowered_palis_crystal",
+        "actuallyadditions:palis_crystal_block",
+        ['minecraft:potion[potion_contents={potion:"minecraft:water"}]',
+         "cornflower",
+         "smooth_stone",
+         "lapis_block"],
+        4000,
+        Color.BLUE.argb,
+        100
+    )
+    e.recipes.actuallyadditions.empowering(
+        "actuallyadditions:empowered_restonia_crystal",
+        "actuallyadditions:restonia_crystal_block",
+        ["sweet_berries", 
+         "rose_bush",
+         "granite",
+         "redstone_block"
+
+        ],
+        4000,
+        Color.RED.argb,
+        100
+    )
+    e.recipes.actuallyadditions.empowering(
+        "actuallyadditions:empowered_diamatine_crystal",
+        "actuallyadditions:diamatine_crystal_block",
+        ["tropical_fish", 
+         "warped_fungus",
+         "deepslate",
+         "diamond_block"
+
+        ],
+        4000,
+        Color.DARK_AQUA.argb,
+        100
+    )
+    e.recipes.actuallyadditions.empowering(
+        "actuallyadditions:empowered_void_crystal",
+        "actuallyadditions:void_crystal_block",
+        ["dried_kelp", 
+         "wither_rose",
+         "blackstone",
+         "obsidian"
+
+        ],
+        4000,
+        Color.BLACK.argb,
+        100
+    )
+    e.recipes.actuallyadditions.empowering(
+        "actuallyadditions:empowered_enori_crystal",
+        "actuallyadditions:enori_crystal_block",
+        ["farmersdelight:milk_bottle", 
+         "azure_bluet",
+         "diorite",
+         "iron_block"
+
+        ],
+        4000,
+        Color.WHITE.argb,
+        100
+    )
+    e.recipes.actuallyadditions.empowering(
+        "actuallyadditions:empowered_emeradic_crystal",
+        "actuallyadditions:emeradic_crystal_block",
+        ["minecraft:poisonous_potato", 
+         "minecraft:mangrove_propagule",
+         "mossy_cobblestone",
+         "emerald_block"
+
+        ],
+        4000,
+        Color.GREEN.argb,
+        100
+    )
+})
