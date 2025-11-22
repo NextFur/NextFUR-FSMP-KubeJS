@@ -20,6 +20,7 @@ EntityEvents.spawned("minecraft:spider", event => {
         server.runCommandSilent(`/attribute ${uuid} irons_spellbooks:spell_resist base set 1.5`)
         server.runCommandSilent(`/attribute ${uuid} irons_spellbooks:nature_magic_resist base set 1.25`)
         server.runCommandSilent(`/attribute ${uuid} irons_spellbooks:blood_magic_resist base set 1.25`)
+        spider.heal(140)
     })     
 
     // Initial coordinates, might use later, might not use later

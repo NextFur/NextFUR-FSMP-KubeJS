@@ -35,4 +35,6 @@ ServerEvents.recipes(e => {
         "pointblank:printer"
     ]})
     e.remove({ type: "actuallyadditions:empowering" })
+    e.remove({ type: "exdeorum:sieve"})
+    e.remove({ type: "exdeorum:compressed_sieve"})
 })
