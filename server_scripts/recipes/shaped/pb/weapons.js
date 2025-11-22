@@ -124,5 +124,73 @@ ServerEvents.recipes(e => {
             D: "minecraft:white_dye"
         }
     )
+            e.shaped(
+        Item.of("pointblank:p30l", 1),
+        [
+            "  ",
+            "PPS",
+            "  L"
+        ],
+        {
+            P: "create:sturdy_sheet",
+            S: "fursmp:scrap_metal",
+            L: "immersiveengineering:wooden_grip",
+            R: "immersiveengineering:toolupgrade_revolver_bayonet",
+            U: "immersiveengineering:component_steel",
+            W: "#minecraft:logs",
+            D: "minecraft:white_dye"
+        }
+    )
+            e.shaped(
+        Item.of("pointblank:glock17", 1),
+        [
+            "  ",
+            "SSU",
+            " UL"
+        ],
+        {
+            P: "create:sturdy_sheet",
+            S: "fursmp:scrap_metal",
+            L: "immersiveengineering:wooden_grip",
+            R: "immersiveengineering:toolupgrade_revolver_bayonet",
+            U: "immersiveengineering:component_steel",
+            W: "#minecraft:logs",
+            D: "minecraft:white_dye"
+        }
+    )
+            e.shaped(
+        Item.of("pointblank:mp7", 1),
+        [
+            "PSS",
+            "PUS",
+            " UL"
+        ],
+        {
+            P: "create:sturdy_sheet",
+            S: "fursmp:scrap_metal",
+            L: "immersiveengineering:wooden_grip",
+            R: "immersiveengineering:toolupgrade_revolver_bayonet",
+            U: "immersiveengineering:component_steel",
+            W: "#minecraft:logs",
+            D: "minecraft:white_dye"
+        }
+    )
+            e.shaped(
+        Item.of("pointblank:m590", 1),
+        [
+            "PSP",
+            "USS",
+            "ULW"
+        ],
+        {
+            P: "create:sturdy_sheet",
+            S: "fursmp:scrap_metal",
+            L: "immersiveengineering:wooden_grip",
+            R: "immersiveengineering:toolupgrade_revolver_bayonet",
+            U: "immersiveengineering:component_steel",
+            W: "#minecraft:logs",
+            D: "minecraft:white_dye"
+        }
+    )
 
 })
