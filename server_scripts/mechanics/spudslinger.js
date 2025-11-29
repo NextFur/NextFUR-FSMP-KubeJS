@@ -8,7 +8,7 @@ ItemEvents.firstLeftClicked("create:potato_cannon", event => {
     if (!(main.id.includes("create:potato_cannon"))) return 
     if (!valid_off.includes(off.id)) return
     if (player.cooldowns.isOnCooldown("create:potato_cannon")) return
-    if (!(main.customData.get("Engineer") == "Flamm")) return
+    if (!(main.customData.get("Engineer") == "Flitwick")) return
 
 
     switch(off.id) {

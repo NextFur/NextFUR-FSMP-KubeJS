@@ -1,6 +1,0 @@
-ItemEvents.modifyTooltips(event => {
-    event.add(
-        "kubejs:golden_bill"
-    )
-
-})
