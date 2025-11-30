@@ -10,14 +10,15 @@ ItemEvents.firstLeftClicked("create:potato_cannon", event => {
     if (player.cooldowns.isOnCooldown("create:potato_cannon")) return
     if (!(main.customData.get("Engineer") == "Flitwick")) return
 
-
+	let dimension = "minecraft:fursmp"
+    
     switch(off.id) {
         
         // Placeholder: Lapis Lazuli
         case valid_off[0]:
             for (let i = 0; i < 4; i++) {
                 server.scheduleInTicks(1 + i * 2, () => {
-                    server.runCommandSilent(`execute in ${event.level.dimension} run cast ${player.uuid} icicle 1`)
+                    server.runCommandSilent(`execute in ${dimension} run cast ${player.uuid} icicle 1`)
                 })
             }
             player.addItemCooldown(event.item, 30)
@@ -25,19 +26,19 @@ ItemEvents.firstLeftClicked("create:potato_cannon", event => {
 
         // Placeholder: Blaze Powder
         case valid_off[1]:
-            for (let i = 0; i < 10; i++) {
-                server.scheduleInTicks(1 + i * 3, () => {
-                    server.runCommandSilent(`execute in ${event.level.dimension} run cast ${player.uuid} flaming_barrage 1`)
+            for (let i = 0; i < 3; i++) {
+                server.scheduleInTicks(1 + i * 21, () => {
+                    server.runCommandSilent(`execute in ${dimension} run cast ${player.uuid} fire_arrow 1`)
                 })
             }
-            player.addItemCooldown(event.item, 80)
+            player.addItemCooldown(event.item, 110)
             return
 
         // Placeholder: Gunpowder
         case valid_off[2]:
             for (let i = 0; i < 8; i++) {
                 server.scheduleInTicks(1 + i * 4, () => {
-                    server.runCommandSilent(`execute in ${event.level.dimension} run cast ${player.uuid} lob_creeper 1`)
+                    server.runCommandSilent(`execute in ${dimension} run cast ${player.uuid} lob_creeper 1`)
                 })
             }
             player.addItemCooldown(event.item, 90)
@@ -47,7 +48,7 @@ ItemEvents.firstLeftClicked("create:potato_cannon", event => {
         case valid_off[3]:
             for (let i = 0; i < 1; i++) {
                 server.scheduleInTicks(1 + i * 15, () => {
-                    server.runCommandSilent(`execute in ${event.level.dimension} run cast ${player.uuid} snowball 1`)
+                    server.runCommandSilent(`execute in ${dimension} run cast ${player.uuid} snowball 1`)
                 })
             }
             player.addItemCooldown(event.item, 120)
@@ -56,8 +57,8 @@ ItemEvents.firstLeftClicked("create:potato_cannon", event => {
         // Placeholder: Breeze Rod
         case valid_off[4]:
             for (let i = 0; i < 4; i++) {
-                server.scheduleInTicks(1 + i * 5, () => {
-                    server.runCommandSilent(`execute in ${event.level.dimension} run cast ${player.uuid} ball_lightning 1`)
+                server.scheduleInTicks(1 + i * 4, () => {
+                    server.runCommandSilent(`execute in ${dimension} run cast ${player.uuid} ball_lightning 1`)
                 })
             }
             player.addItemCooldown(event.item, 100)
@@ -67,7 +68,7 @@ ItemEvents.firstLeftClicked("create:potato_cannon", event => {
         case valid_off[5]:
             for (let i = 0; i < 9; i++) {
                 server.scheduleInTicks(1 + i * 3, () => {
-                    server.runCommandSilent(`execute in ${event.level.dimension} run cast ${player.uuid} magic_missile 1`)
+                    server.runCommandSilent(`execute in ${dimension} run cast ${player.uuid} magic_missile 1`)
                 })
             }
             player.addItemCooldown(event.item, 80)

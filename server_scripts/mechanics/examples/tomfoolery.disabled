@@ -3,8 +3,8 @@ EntityEvents.spawned("minecraft:spider", event => {
     const spider = event.entity
     const server = event.server
 
-    // Check if said spider is the actual bussy
-    if (!(spider.displayName.string.includes("TESTANDO BUCETAS"))) return
+    // Check if said spider is the actual boss
+    if (!(spider.displayName.string.includes("TESTANDO"))) return
 
     const {sx, sy, sz} = spider
 

@@ -3,11 +3,12 @@ EntityEvents.spawned("minecraft:spider", event => {
     const spider = event.entity
     const server = event.server
 
-    // Check if said spider is the actual bussy
+    // Check if said spider is the actual boss
     if (!(spider.displayName.string.includes("Meshy Spider"))) return
 
     // Modify attributes
     let uuid = spider.uuid
+    let dimension = "minecraft:fursmp"
     server.scheduleInTicks(1, () => {
         server.runCommandSilent(`/attribute ${uuid} minecraft:generic.max_health base set 140`)
         server.runCommandSilent(`/attribute ${uuid} minecraft:generic.scale base set 2.2`)
@@ -20,7 +21,6 @@ EntityEvents.spawned("minecraft:spider", event => {
         server.runCommandSilent(`/attribute ${uuid} irons_spellbooks:spell_resist base set 1.5`)
         server.runCommandSilent(`/attribute ${uuid} irons_spellbooks:nature_magic_resist base set 1.25`)
         server.runCommandSilent(`/attribute ${uuid} irons_spellbooks:blood_magic_resist base set 1.25`)
-        spider.heal(140)
     })     
 
     // Initial coordinates, might use later, might not use later
@@ -34,7 +34,7 @@ EntityEvents.spawned("minecraft:spider", event => {
 
         return target
     }
-
+    
     // Choreographed attacks, spell sequences, and whatever feels relevant to this?
     // Again, ram a few pineapples up whoever decided to use Javascript over Python's ass
 
@@ -48,7 +48,7 @@ EntityEvents.spawned("minecraft:spider", event => {
                     let offset_z = (Math.random() * dh) - (dh / 2)
 
                     spider.lookAt("eyes", new Vec3d(target.x + offset_x, target.y + offset_y, target.z + offset_z))
-                    server.runCommandSilent(`/execute in ${event.level.dimension} run cast ${uuid} ${spell_name} ${spell_level}`)
+                    server.runCommandSilent(`/execute in ${dimension} run cast ${uuid} ${spell_name} ${spell_level}`)
                 })
             }
         }
@@ -59,7 +59,7 @@ EntityEvents.spawned("minecraft:spider", event => {
             for (let i = 0; i < repetitions; i++) {
                 server.scheduleInTicks(rep_delay * i, () => {
                     spider.lookAt("eyes", new Vec3d(target.x, target.y, target.z))
-                    server.runCommandSilent(`/execute in ${event.level.dimension} run cast ${uuid} ${spell_name} ${spell_level}`)
+                    server.runCommandSilent(`/execute in ${dimension} run cast ${uuid} ${spell_name} ${spell_level}`)
                 })
             }
         }
@@ -68,7 +68,7 @@ EntityEvents.spawned("minecraft:spider", event => {
     const cast_blood_step = (target) => {
         if (target != null) {
             spider.lookAt("eyes", new Vec3d(target.x, target.y + 1.8, target.z))
-            server.runCommandSilent(`/execute in ${event.level.dimension} run cast ${uuid} burning_dash 10`)
+            server.runCommandSilent(`/execute in ${dimension} run cast ${uuid} burning_dash 10`)
         }
     }
 
@@ -116,7 +116,7 @@ EntityEvents.spawned("minecraft:spider", event => {
                 stand.lookAt("eyes", new Vec3d(x, y, z))
 
                 // Finally, cast the fucking spell
-                server.runCommandSilent(`/execute in ${event.level.dimension} run cast ${stand.uuid} ${spell_name} ${spell_level}`)
+                server.runCommandSilent(`/execute in ${dimension} run cast ${stand.uuid} ${spell_name} ${spell_level}`)
 
                 // ... and then execute the Armor Stands, as their purpose has been served...
                 server.scheduleInTicks(1, () => {
@@ -165,18 +165,18 @@ EntityEvents.death("minecraft:spider", event => {
     const spider = event.entity
     const server = event.server
 
-    // Check if said spider is the actual bussy, again
+    // Check if said spider is the actual boss, again
     if (!(spider.displayName.string.includes("Meshy Spider"))) return
 
     const {x, y, z} = spider
-    server.runCommandSilent(`execute in ${event.level.dimension} run loot spawn ${x} ${y + 1} ${z} loot fursmp:bosses/meshy_spider`)
+    server.runCommandSilent(`execute in ${dimension} run loot spawn ${x} ${y + 1} ${z} loot fursmp:bosses/meshy_spider`)
 
     for (let i = 0; i < 14; i++) {
         server.scheduleInTicks(2 + 3 * i, () => {
             let sx = (Math.random() * 0.4) - 0.2
             let sy = 1.4
             let sz = (Math.random() * 0.4) - 0.2
-            server.runCommandSilent(`summon irons_spellbooks:comet ${x} ${y} ${z} {Motion:[${sx}, ${sy}, ${sz}],Damage:15.0,ExplosionRadius:4.0}`)
+            server.runCommandSilent(`execute in ${dimension} run summon irons_spellbooks:comet ${x} ${y} ${z} {Motion:[${sx}, ${sy}, ${sz}],Damage:15.0,ExplosionRadius:4.0}`)
         })
     }
     
