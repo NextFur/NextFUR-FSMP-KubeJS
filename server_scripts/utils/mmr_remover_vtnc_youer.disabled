@@ -1,0 +1,8 @@
+ServerEvents.recipes(e => {
+    
+    // Removes the default crafting recipe for every casing
+    
+    e.remove({ mod: "modular_machinery_reborn" })
+    e.remove({ mod: "mmrcreate" })
+
+})
