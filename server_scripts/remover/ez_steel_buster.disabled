@@ -1,5 +1,0 @@
-ServerEvents.recipes(e => {
-    
-    e.remove({ mod: "epicpaladins", type: "minecraft:blasting", output: "immersiveengineering:ingot_steel" })
-
-})

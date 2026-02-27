@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "type": "directory",
+      "source": "entity/bed",
+      "prefix": "entity/bed/"
+    },
+	{
+      "type": "directory",
+      "source": "entity/chest",
+      "prefix": "entity/chest/"
+    }
+  ]
+}
