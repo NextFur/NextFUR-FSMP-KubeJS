@@ -1,0 +1,189 @@
+// -------ITENS-------
+
+// -------aviator_dream-------
+"aviator_dream:douglas_dc1"
+"aviator_dream:douglas_dc2"
+"aviator_dream:douglas_c47"
+"aviator_dream:lockheed_l049g"
+"aviator_dream:test"
+"aviator_dream:dehavilland_dh106"
+"aviator_dream:fokker_fviib3m"
+"aviator_dream:fokker_fviia"
+"aviator_dream:toyota_stout_k100"
+
+// -------apothic_enchanting-------
+"apothic_enchanting:improved_scrap_tome"
+"apothic_enchanting:extraction_tome"
+"apothic_enchanting:draconic_endshelf"
+"apothic_enchanting:occult_ender_lead"
+
+// -------artifacts-------
+"artifacts:scarf_of_invisibility"
+"artifacts:universal_attractor"
+"artifacts:charm_of_shrinking"
+
+// -------advanced_ae-------
+"advanced_ae:luck_card"
+"advanced_ae:flight_card"
+"advanced_ae:magnet_card"
+
+// -------ae2-------
+"ae2:tiny_tnt"
+
+// -------better_weaponry-------
+"better_weaponry:wooden_scythe"
+"better_weaponry:sotne_scythe"
+"better_weaponry:iron_scythe"
+"better_weaponry:golden_scythe"
+"better_weaponry:diamond_scythe"
+"better_weaponry:netherite_scythe"
+"better_weaponry:copper_scythe"
+"better_weaponry:emerald_scythe"
+"better_weaponry:amethyst_scythe"
+
+// -------cataclysm-------
+"cataclysm:soul_render"
+"cataclysm:ignitium_helmet"
+"cataclysm:ignitium_elytra_chestplate"
+"cataclysm:ignitium_chestplate"
+"cataclysm:ignitium_leggings"
+"cataclysm:ignitium_boots"
+"cataclysm:void_forge"
+"cataclysm:the_immolator"
+"cataclysm:the_incinerator"
+"cataclysm:ignitium_ingot"
+"cataclysm:mech_eye"
+"cataclysm:flame_eye"
+"cataclysm:void_eye"
+"cataclysm:monstrous_eye"
+"cataclysm:abyss_eye"
+"cataclysm:desert_eye"
+"cataclysm:cursed_eye"
+"cataclysm:storm_eye"
+"cataclysm:blazing_grips"
+"cataclysm:altar_of_fire"
+"cataclysm:altar_of_void"
+"cataclysm:altar_of_amethyst"
+"cataclysm:altar_of_abyss"
+"cataclysm:black_steel_targe"
+"cataclysm:azure_sea_shield"
+"cataclysm:bulwark_of_the_flame"
+"cataclysm:ignitium_upgrade_smithing_template"
+"cataclysm:cursium_upgrade_smithing_template"
+"cataclysm:witherite_ingot"
+"cataclysm:sandstorm_in_a_bottle"
+"cataclysm:ancient_spear"
+"cataclysm:void_core"
+"cataclysm:remnant_skull"
+"cataclysm:netherite_effigy"
+"cataclysm:sticky_gloves"
+"cataclysm:monstrous_horn"
+"cataclysm:gauntlet_of_bulwark"
+"cataclysm:gauntlet_of_maelstrom"
+"cataclysm:laser_gatling"
+"cataclysm:meat_shredder"
+
+// -------create_things_and_misc-------
+"create_things_and_misc:radar"
+"create_sa:copper_magnet"
+
+// -------dndesires-------
+"dndesires:industrial_fan"
+
+// -------extended_industrialization-------
+"extended_industrialization:nano_helmet"
+"extended_industrialization:nano_chestplate"
+"extended_industrialization:nano_gravichestplate"
+"extended_industrialization:nano_leggings"
+"extended_industrialization:nano_boots"
+"extended_industrialization:nano_quantum_helmet"
+"extended_industrialization:nano_quantum_chestplate"
+"extended_industrialization:nano_quantum_leggings"
+"extended_industrialization:nano_quantum_boots"
+
+// -------gametechbcs_spellbooks-------
+"gametechbcs_spellbooks:amulet_of_spectral_shift"
+
+// -------hazennstuff-------
+"hazennstuff:starkissed_zenalite"
+"hazennstuff:divine_mold"
+"hazennstuff:rod_of_discord"
+"hazennstuff:fireblossom_rapier"
+"hazennstuff:radiance"
+
+// -------irons_spellbooks-------
+"irons_spellbooks:betrayer_signet"
+
+// -------justdirethings-------
+"justdirethings:gooblock_tier2"
+"justdirethings:gooblock_tier3"
+"justdirethings:gooblock_tier4"
+
+// -------mowziesmobs_earthrend_gauntlet--------
+"mowziesmobs:grant_suns_blessing"
+"mowziesmobs_earthrend_gauntlet"
+
+// -------malum-------
+"malum:tyrving"
+
+// -------minecraft-------
+"minecraft:whiter_skeleton_spawner"
+
+// -------ModernIndustrialization-------
+"modern_industrialization:quantum_helmet"
+"modern_industrialization:quantum_chestplate"
+"modern_industrialization:quantum_leggings"
+"modern_industrialization:quantum_boots"
+
+// -------silentgear--------
+"silentgear:azure_silver_ingot"
+"silentgear:azure_electrum_ingot"
+"silentgear:tyrian_steel_ingot"
+"silentgear:crimson_iron_ingot"
+"silentgear:crimson_steel_ingot"
+"silentgear:high_carbon_steel"
+"silentgear:recrystallizer"
+"silentgear:refabricator"
+"silentgear:metal_press"
+"silentgear:material_grader"
+"silentgear:starlight_charger"
+"silentgear:alloy_forge"
+"silentgear:magnetic_upgrade"
+"silentgear:mace_template"
+"silentgear:hammer_template"
+"silentgear:excavator_template"
+"silentgear:machete_template"
+"silentgear:mace_blueprint"
+"silentgear:hammer_blueprint"
+"silentgear:excavator_blueprint"
+"silentgear:machete_blueprint"
+"silentgear:shield"
+"silentgear:shield_blueprint"
+"silentgear:shield_template"
+
+// -------sophisticatedbackpacks-------
+"sophisticatedbackpacks:stack_upgrade_omega_tier"
+"sophisticatedbackpacks:magnet_upgrade"
+"sophisticatedbackpacks:advanced_magnet_upgrade"
+"sophisticatedbackpacks:xp_pump_upgrade"
+"sophisticatedbackpacks:alchemy_upgrade"
+
+// -------sgearmetalworks-------
+"sgearmetalworks:excavator_cast"
+"sgearmetalworks:hammer_cast"
+"sgearmetalworks:shield_cast"
+"sgearmetalworks:machete_cast"
+
+// -------spore-------
+"spore:surgery_table"
+"spore:scanner"
+
+// -------too_many_bows-------
+"too_many_bows:emerald_sage_bow"
+"too_many_bows:dusk_reaper"
+"too_many_bows:dark_bow"
+"too_many_bows:necro_flame_bow"
+
+// -------Itens Customs-------
+
+// -------enchantments-------
