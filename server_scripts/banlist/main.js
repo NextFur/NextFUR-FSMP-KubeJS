@@ -336,9 +336,28 @@ const prohibitedBlocks = [
 ]
 
 const prohibitedSpells = [
-	// "hazennstuff:chaotic_teleport",
-	// "irons_spellbooks:ascension",
-	// "irons_spellbooks:flaming_strike",
+	"gtbcs_geomancy_plus:pillar_of_the_resounding_earth",
+	"gametechbcs_spellbooks:crimson_downpour",
+	"gametechbcs_spellbooks:aerial_collapse",
+	"gametechbcs_spellbooks:spectral_blink",
+	"gametechbcs_spellbooks:psychic_bolt",
+	"gametechbcs_spellbooks:displacement",
+	"gametechbcs_spellbooks:blackout",
+	"gametechbcs_spellbooks:reversal",
+	"gametechbcs_spellbooks:ensnare",
+	"irons_spellbooks:sculk_tentacles",
+	"irons_spellbooks:abyssal_shroud",
+	"irons_spellbooks:planar_sight",
+	"irons_spellbooks:telekinesis",
+	"irons_spellbooks:blood_step",
+	"irons_spellbooks:black_hole",
+	"irons_spellbooks:heat_surge",
+	"irons_spellbooks:sonic_boom",
+	"irons_spellbooks:heartstop",
+	"irons_spellbooks:evasion",
+	"irons_spellbooks:recall",
+	"irons_spellbooks:blight",
+	"irons_spellbooks:root"
 ]
 
 //! =====================================================
@@ -558,7 +577,7 @@ function VerifyInventory(player) {
 //! =====================================================
 
 PlayerEvents.tick((event) => {
-	if (event.player.tickCount % 20 !== 0) return // Run every 20 ticks (1 time per second)
+	if (event.player.tickCount % 40 !== 0) return // Run every 40 ticks (1 time per 2 seconds)
 	if (event.player.level.isClientSide()) return // Only run on the server side
 	if (event.player.username.startsWith("FNPC")) return
 	if (event.player.username.startsWith("FURSMP")) return
