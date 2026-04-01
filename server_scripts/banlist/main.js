@@ -226,6 +226,7 @@ const prohibitedItems = [
 	"sophisticatedbackpacks:magnet_upgrade",
 	"sophisticatedbackpacks:stack_upgrade_omega_tier",
 	"sophisticatedbackpacks:xp_pump_upgrade",
+	"sophisticatedbackpacks:inception_upgrade",
 	"spore:mutation_syringe",
 	"spore:surgery_table",
 	"too_many_bows:dark_bow",
