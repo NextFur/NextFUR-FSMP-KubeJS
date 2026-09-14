@@ -1,0 +1,104 @@
+{
+    "type": "gateways:endless",
+    "size": "medium",
+    "color": "#CCFF33",
+    "base_wave": {
+        "max_wave_time": 600,
+        "setup_time": 100,
+        "entities": [
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:stray",
+                "count": 3
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:skeleton",
+                "count": 3
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:zombie",
+                "count": 6
+            },
+            {
+                "type": "gateways:standard",
+                "entity": "minecraft:enderman",
+                "count": 2
+            }
+        ],
+        "modifiers": [
+        ],
+        "rewards": [
+            {
+                "type": "gateways:loot_table",
+                "loot_table": "foxes:gateways/voices_of_the_silent",
+                "rolls": 2,
+                "desc": "Memories of the Silent Ones"
+            }
+        ]
+    },
+    "modifiers": [
+        {
+            "application_mode": {
+                "type": "gateways:after_every_n_waves",
+                "waves": 1,
+                "max": 20
+            },
+            "entities": [
+                {
+                    "entity": "minecraft:stray",
+                    "count": 1
+                },
+                {
+                    "entity": "minecraft:skeleton",
+                    "count": 1
+                },
+                {
+                    "entity": "minecraft:zombie",
+                    "count": 2
+                }
+            ],
+            "rewards": [
+                {
+                    "type": "gateways:loot_table",
+                    "loot_table": "foxes:gateways/voices_of_the_silent",
+                    "rolls": 1,
+                    "desc": "Memories of the Silent Ones"
+                }
+            ],
+            "modifiers": [
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.08
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.08
+                },
+                {
+                    "type": "gateways:attribute",
+                    "attribute": "apothic_attributes:arrow_damage",
+                    "operation": "add_multiplied_total",
+                    "value": 0.1
+                }
+            ],
+            "max_wave_time": -20
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    }
+}

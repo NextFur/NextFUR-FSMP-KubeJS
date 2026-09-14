@@ -1,0 +1,167 @@
+{
+	"size": "large",
+	"color": "#6611CC",
+	"waves": [
+        {
+			"entities": [
+                {
+				    "entity": "minecraft:enderman",
+				    "count": 4
+			    }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.4
+                }
+            ],
+			"max_wave_time": 400,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+				    "entity": "minecraft:enderman",
+				    "count": 6
+			    }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.6
+                }
+            ],
+			"max_wave_time": 400,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+				    "entity": "minecraft:enderman",
+				    "count": 8
+			    }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.8
+                }
+            ],
+			"max_wave_time": 400,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:enderman",
+                    "count": 6
+                },
+                {
+                    "entity": "irons_spellbooks:pyromancer",
+                    "count": 2
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 2
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.8
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.25
+                }
+            ],
+			"max_wave_time": 600,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:enderman",
+                    "count": 10
+                },
+                {
+                    "entity": "irons_spellbooks:pyromancer",
+                    "count": 3
+                },
+                {
+                    "entity": "irons_spellbooks:cryomancer",
+                    "count": 3
+                },
+                {
+                    "entity": "minecraft:spider",
+                    "count": 4
+                },
+                {
+                    "entity": "minecraft:silverfish",
+                    "count": 8
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.5
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_power",
+                    "operation": "add_multiplied_total",
+                    "value": 0.4
+                },
+                {
+                    "attribute": "irons_spellbooks:spell_resist",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                }
+            ],
+			"max_wave_time": 800,
+			"setup_time": 100
+		}
+	],
+    "rewards": [
+        {
+            "type": "gateways:stack_list",
+            "stacks": [
+                {
+                    "id": "irons_spellbooks:fire_rune",
+                    "count": 4
+                },
+                {
+                    "id": "irons_spellbooks:ice_rune",
+                    "count": 4
+                }
+            ]
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    },
+    "failures": [
+    ]
+}

@@ -1,0 +1,105 @@
+{
+	"size": "small",
+	"color": "#46A908",
+	"waves": [
+        {
+			"entities": [{
+				"entity": "minecraft:cow",
+				"count": 4
+			}],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.2
+                }
+            ],
+			"max_wave_time": 400,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:cow",
+                    "count": 6
+                },
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 6
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 0.8
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.3
+                }
+            ],
+			"max_wave_time": 600,
+			"setup_time": 100
+		},
+        {
+			"entities": [
+                {
+                    "entity": "minecraft:cow",
+                    "count": 10
+                },
+                {
+                    "entity": "minecraft:vindicator",
+                    "count": 6
+                },
+                {
+                    "entity": "minecraft:stray",
+                    "count": 3
+                },
+                {
+                    "entity": "minecraft:zombie",
+                    "count": 5
+                }
+            ],
+            "modifiers": [
+                {
+                    "attribute": "minecraft:generic.max_health",
+                    "operation": "add_multiplied_total",
+                    "value": 1.2
+                },
+                {
+                    "attribute": "minecraft:generic.armor",
+                    "operation": "add_value",
+                    "value": 8
+                },
+                {
+                    "attribute": "minecraft:generic.movement_speed",
+                    "operation": "add_multiplied_total",
+                    "value": 0.3
+                }
+            ],
+			"max_wave_time": 800,
+			"setup_time": 100
+		}
+	],
+    "rewards": [
+        {
+            "type": "gateways:entity_loot",
+            "entity": "minecraft:cow",
+            "rolls": 25
+        }
+    ],
+    "spawn_algorithm": "gateways:inward_spiral",
+    "rules": {
+        "player_damage_only": true,
+        "requires_nearby_players": true
+    },
+    "failures": [
+    ]
+}
